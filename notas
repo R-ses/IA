@@ -1,0 +1,56 @@
+
+Entrada            Salida
+     X ->    [MODELO REAL]         -> Y
+                                      ~=
+     X -> [MODELO MATEMATICO]      ->  ^Y
+     
+%-------------------------------------------------     
+    Redes Neuronales
+        - Corriente Conexionista
+      
+      
+1943 McCullough-Pitts
+    
+    Entradas                            NEURONA
+     
+      X1*W--------------------------->
+      X2*W ---------------------------> [E] -> [Funcion] -> (Salida [A])  -> [U(t)]*
+      X3*W--------------------------->
+      
+      
+      Funcion de la neurona 
+      Para cada X en el vector de entradas se multiplican los pesos y se le suma un Bias, se evalua contra un valor teta
+         { 
+          F(x) = 1 si (F(X)>teta)
+          F(x) = 0 si (F(X)<teta)
+         } 
+         *Pesos iguales 
+         *Funcion predefinida
+          Modelo inicial (Perceptron)
+          
+
+
+1958
+Frank Rosenblatt
+
+    *Cambio de los pesos
+    *Cualquier Funcion 
+    {
+    g(x) = F(Sumatoria de W*X + B para cada) 
+    }
+    
+    Pasos 
+    Net(X):
+        Z = i=1;N Σ WiXi + W0
+        a = f(Z)
+        N = F(WiXi + W0) * Funcion basica para 1 neurona
+        
+        
+        SSE = i=1;N Σ(Yi - ^Yi)^2
+        
+        W(new) = W(old) - n()
+        
+        
+        
+        
+        
